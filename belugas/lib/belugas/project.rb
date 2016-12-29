@@ -3,6 +3,7 @@ require 'belugas/templates/project'
 
 module Belugas
   class Project
+    include ActiveModel::Serialization
     attr_reader :rugged, :project
 
     def initialize(pathname)
@@ -28,6 +29,10 @@ module Belugas
 
     def collection
       @collection ||= Belugas::Languages::Collection.new(@project)
+    end
+
+    def to_json
+      Belugas::Serializers::Project.new(self).to_json
     end
 
     def to_s

@@ -1,5 +1,7 @@
 module Belugas
   class Language
+    include ActiveModel::Serialization
+
     attr_reader :name, :lines_of_code
 
     def initialize(name, lines_of_code)

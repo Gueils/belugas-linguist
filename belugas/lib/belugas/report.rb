@@ -1,4 +1,6 @@
+require 'belugas/formats'
 require 'belugas/templates'
+require 'belugas/serializers'
 require 'belugas/project'
 
 module Belugas
@@ -9,11 +11,11 @@ module Belugas
       "languages" => Belugas::Templates::Collection,
     }
 
-    def initialize(pathname, templates)
+    def initialize(pathname, options)
       project = Belugas::Project.new(pathname)
 
-      @templates = templates.split(",").map do |template|
-        TEMPLATE_NAMES[template].new(project)
+      @templates = options[:includes].split(",").map do |template|
+        TEMPLATE_NAMES[template].new(project, options[:format])
       end
     end
 
