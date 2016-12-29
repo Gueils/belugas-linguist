@@ -28,7 +28,7 @@ module Belugas
     end
 
     def collection
-      @collection ||= Belugas::Languages::Collection.new(@project)
+      @collection ||= Belugas::Languages::Collection.new(self)
     end
 
     def to_json
@@ -37,6 +37,10 @@ module Belugas
 
     def to_s
       Belugas::Templates::Project.new(self).render
+    end
+
+    def method_missing(name, *args, &block)
+      @project.send(name, *args, &block)
     end
   end
 end

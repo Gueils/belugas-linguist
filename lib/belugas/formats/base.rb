@@ -1,4 +1,3 @@
-
 module Belugas
   module Formats
     class Base

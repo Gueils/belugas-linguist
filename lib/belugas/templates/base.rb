@@ -1,5 +1,3 @@
-require 'pry'
-
 module Belugas
   module Templates
     class Base
