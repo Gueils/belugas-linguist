@@ -1,8 +1,12 @@
-# Belugas
+![belugas](belugas.png)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/belugas`. To experiment with that code, run `bin/console` for an interactive prompt.
+Belugas is a command line application for feature detection on any git repository.
 
-TODO: Delete this and the text above, and describe your gem
+## Table of contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Installation
 
@@ -14,21 +18,45 @@ gem 'belugas'
 
 And then execute:
 
-    $ bundle
+```console
+% bundle
+```
 
 Or install it yourself as:
 
-    $ gem install belugas
+```console
+% gem install belugas
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+You can run belugas on any git project.
 
-## Development
+```console
+% belugas report
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+If you have another path where the project is, you can simply run:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```console
+% belugas report /workspace/repos/my_project
+```
+
+### Options for belugas
+
+| Option Name  | Description | Alias | Default | Values |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| --includes  | The type of report to include  | -i | project | project,languages | 
+| --format | The output format  | -f | table | json or table |
+
+
+### Running with Docker
+
+You first need to `cd` to the git project and then:
+
+```console
+% docker run --rm -v $(pwd):/code icalialabs/belugas:0.0.1
+```
 
 ## Contributing
 
