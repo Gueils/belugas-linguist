@@ -28,4 +28,4 @@ VOLUME /code
 WORKDIR /code
 
 # 4: Set the default command:
-CMD [ "/usr/src/app/bin/belugas", "report", "/code", "--includes=languages", "--format=json" ]
+CMD [ "/usr/src/app/bin/belugas-linguist", "report", "/code"]

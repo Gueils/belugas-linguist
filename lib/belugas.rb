@@ -10,11 +10,9 @@ module Belugas
   class Sonar < Thor
     package_name "belugas"
 
-    desc "report path --includes=project,languages --format=table", "Generates report from repo analysis"
-    method_option :includes, type: :string, default: "project", required: false, aliases: "-i"
-    method_option :format, type: :string, default: "table", required: false, aliases: "-f"
+    desc "report", "Generates report from repo analysis"
     def report(pathname = ".")
-      Belugas::Report.new(pathname, options).render
+      Belugas::Report.new(pathname).render
     end
   end
 end

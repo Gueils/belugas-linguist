@@ -1,5 +1,4 @@
 require 'belugas/languages/collection'
-require 'belugas/templates/project'
 
 module Belugas
   class Project
@@ -33,10 +32,6 @@ module Belugas
 
     def to_json
       Belugas::Serializers::Project.new(self).to_json
-    end
-
-    def to_s
-      Belugas::Templates::Project.new(self).render
     end
 
     def method_missing(name, *args, &block)
