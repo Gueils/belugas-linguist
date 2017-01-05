@@ -3,8 +3,12 @@ module Belugas
     class Language < Belugas::Serializers::Base
       include Belugas::Utils
 
-      attributes :type,:name, :description, :cue_locations,
-                 :engines, :meta
+      attributes :type, :name, :description, :categories,
+                 :cue_locations, :engines, :meta
+
+      def categories
+        ["Language"]
+      end
 
       def type
         "feature"
