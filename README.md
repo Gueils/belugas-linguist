@@ -1,4 +1,6 @@
-![belugas.png](belugas.png)
+<p align="center">
+  <img src="belugas.png" height="300px" alt="Belugas"/>
+</p>
 
 ## Overview
 
