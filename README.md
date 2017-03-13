@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="belugas.png" height="300px" alt="Belugas"/>
+  <img src="belugas-linguist.png" height="300px" alt="Belugas"/>
 </p>
 
 ## Overview
