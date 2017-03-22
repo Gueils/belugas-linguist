@@ -1,3 +1,6 @@
+[![Code Climate](https://codeclimate.com/github/WhalesIL/belugas-linguist/badges/gpa.svg)](https://codeclimate.com/github/WhalesIL/belugas-linguist)
+[![Build Status](https://travis-ci.org/WhalesIL/belugas-linguist.svg?branch=master)](https://travis-ci.org/WhalesIL/belugas-linguist)
+
 <p align="center">
   <img src="belugas-linguist.png" height="300px" alt="Belugas"/>
 </p>
