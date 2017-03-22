@@ -1,10 +1,13 @@
+[![Code Climate](https://codeclimate.com/github/WhalesIL/belugas-linguist/badges/gpa.svg)](https://codeclimate.com/github/WhalesIL/belugas-linguist)
+[![Build Status](https://travis-ci.org/WhalesIL/belugas-linguist.svg?branch=master)](https://travis-ci.org/WhalesIL/belugas-linguist)
+
 <p align="center">
   <img src="belugas-linguist.png" height="300px" alt="Belugas"/>
 </p>
 
 ## Overview
 
-`belugas-linguist` is an engine used on the [Whales](https://github.com/IcaliaLabs/whales-cli) ecosystem to detect features, it's based on [Github Linguist](https://github.com/github/linguist) 
+`belugas-linguist` is an engine used on the [Whales](https://github.com/WhalesIL/whales-cli) ecosystem to detect features, it's based on [Github Linguist](https://github.com/github/linguist) 
 
 ## Table of contents
 
@@ -76,13 +79,13 @@ And voilá! The terminal will stream a json output for each of the features dete
 
 ## Contributing
 
-Everyone is freely to collaborate, just make sure you follow our [code of conduct](https://github.com/IcaliaLabs/belugas-linguist/blob/master/CODE_OF_CONDUCT.md). Thank you [contributors](https://github.com/IcaliaLabs/belugas-linguist/graphs/contributors)!
+Everyone is freely to collaborate, just make sure you follow our [code of conduct](https://github.com/WhalesIL/belugas-linguist/blob/master/CODE_OF_CONDUCT.md). Thank you [contributors](https://github.com/WhalesIL/belugas-linguist/graphs/contributors)!
 
 ### Create an Issue
 
-Find a bug and don't know how to fix it? Have trouble following the documentation or have a question about the project? Then by all means, please [create an issue](https://github.com/IcaliaLabs/belugas-linguist/issues/new).
+Find a bug and don't know how to fix it? Have trouble following the documentation or have a question about the project? Then by all means, please [create an issue](https://github.com/WhalesIL/belugas-linguist/issues/new).
 
-Just please make sure you check [existing issues](https://github.com/IcaliaLabs/belugas-linguist/issues) to see if what you're running into has been addressed already.
+Just please make sure you check [existing issues](https://github.com/WhalesIL/belugas-linguist/issues) to see if what you're running into has been addressed already.
 
 ### Submit a Pull Request
 
@@ -96,12 +99,12 @@ Once you've created a pull request, mainteners will chime in to review your prop
 
 ### I want to contribute but don't know where to start
 
-That's great also! We already have some [open issues](https://github.com/IcaliaLabs/belugas-linguist/issues) for you to dive in.
+That's great also! We already have some [open issues](https://github.com/WhalesIL/belugas-linguist/issues) for you to dive in.
 
 ## Copyright
 
-See [LICENSE](https://github.com/IcaliaLabs/belugas-linguist/blob/master/LICENSE.txt)
+See [LICENSE](https://github.com/WhalesIL/belugas-linguist/blob/master/LICENSE.txt)
 
-![Icalia Labs](https://raw.githubusercontent.com/IcaliaLabs/kaishi/master/logo.png)
+![Icalia Labs](https://raw.githubusercontent.com/icalialabs/kaishi/master/logo.png)
 
 belugas-linguist is maintained by [Icalia Labs](http://www.icalialabs.com/team)
