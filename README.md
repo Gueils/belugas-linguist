@@ -105,6 +105,6 @@ That's great also! We already have some [open issues](https://github.com/WhalesI
 
 See [LICENSE](https://github.com/WhalesIL/belugas-linguist/blob/master/LICENSE.txt)
 
-![Icalia Labs](https://raw.githubusercontent.com/icailialabs/kaishi/master/logo.png)
+![Icalia Labs](https://raw.githubusercontent.com/icalialabs/kaishi/master/logo.png)
 
 belugas-linguist is maintained by [Icalia Labs](http://www.icalialabs.com/team)

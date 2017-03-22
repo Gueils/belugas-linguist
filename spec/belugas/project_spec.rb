@@ -3,8 +3,8 @@ require "spec_helper"
 describe Belugas::Project do
   subject { Belugas::Project.new(".") }
 
-  pending
   it "responds to name" do
+    pending
     expect(subject.name).to eq("src")
   end
 
@@ -24,8 +24,8 @@ describe Belugas::Project do
     expect(subject.collection).to be_kind_of(Belugas::Languages::Collection)
   end
 
-  pending
   it "responds to json" do
+    pending
     expect(subject.to_json).to eq({"name":"src","size":8603,"total_files":20,"top_language":"Ruby"}.to_json)
   end
 end
