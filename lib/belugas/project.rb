@@ -5,13 +5,13 @@ module Belugas
     include ActiveModel::Serialization
     attr_reader :rugged, :project
 
-    def initialize(pathname)
-      @rugged = Rugged::Repository.new(pathname)
-      @project = Linguist::Repository.new(@rugged, @rugged.head.target_id)
+    def initialize(rugged, linguist_project)
+      @rugged = rugged
+      @project = linguist_project
     end
 
     def name
-      @rugged.path.split("/")[2]
+      @rugged.path.split("/").last
     end
 
     def size
