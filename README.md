@@ -20,14 +20,14 @@
 
 ### Prerequisites
 
-The Belugas Ruby CLI is distributed and run as a [Docker](https://hub.docker.com/r/icalialabs/belugas-linguist/) image, so you only need to have Docker [installed](https://docs.docker.com/engine/installation/) and running on your machine.
+The Belugas Ruby CLI is distributed and run as a [Docker](https://hub.docker.com/r/WhalesIL/belugas-linguist/) image, so you only need to have Docker [installed](https://docs.docker.com/engine/installation/) and running on your machine.
 
 ### Setup
 
 Fire up your terminal and run: 
 
 ```console
-docker pull icalialabs/belugas-linguist:latest
+docker pull WhalesIL/belugas-linguist:latest
 ```
 
 And that's it! 
@@ -46,7 +46,7 @@ The project must be a git project, since linguist gets lots of information from 
 docker run \
   --interactive --tty --rm \
   --volume "$PWD":/code \
-  icalialabs/belugas-linguist
+  WhalesIL/belugas-linguist
 ```
 
 And voilá! The terminal will stream a json output for each of the features detected in the following format:
