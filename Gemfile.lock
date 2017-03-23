@@ -105,7 +105,7 @@ PLATFORMS
 DEPENDENCIES
   belugas!
   bundler (~> 1.13)
-  pry (= 0.10)
+  pry
   rake (~> 10.0)
   rspec (~> 3.0)
   therubyracer

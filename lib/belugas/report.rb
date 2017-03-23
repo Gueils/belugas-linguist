@@ -4,7 +4,10 @@ require 'belugas/project'
 module Belugas
   class Report
     def initialize(pathname)
-      @project = Belugas::Project.new(pathname)
+      rugged = Rugged::Repository.new(pathname)
+      linguist_project = Linguist::Repository.new(rugged, rugged.head.target_id)
+
+      @project = Belugas::Project.new(rugged, linguist_project)
       @collection = @project.collection
     end
 
