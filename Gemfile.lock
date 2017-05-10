@@ -107,11 +107,10 @@ PLATFORMS
 
 DEPENDENCIES
   belugas!
-  bundler (~> 1.13)
   codeclimate-test-reporter (~> 1.0.0)
   pry
   rake (~> 10.0)
-  rspec (~> 3.0)
+  rspec
   simplecov
 
 BUNDLED WITH
