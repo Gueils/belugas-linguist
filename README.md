@@ -1,5 +1,5 @@
-[![Code Climate](https://codeclimate.com/github/WhalesIL/belugas-linguist/badges/gpa.svg)](https://codeclimate.com/github/WhalesIL/belugas-linguist)
-[![Build Status](https://travis-ci.org/WhalesIL/belugas-linguist.svg?branch=master)](https://travis-ci.org/WhalesIL/belugas-linguist)
+[![Code Climate](https://codeclimate.com/github/Gueils/belugas-linguist/badges/gpa.svg)](https://codeclimate.com/github/Gueils/belugas-linguist)
+[![Test Coverage](https://codeclimate.com/github/Gueils/belugas-linguist/badges/coverage.svg)](https://codeclimate.com/github/Gueils/belugas-linguist/coverage)
 
 <p align="center">
   <img src="belugas-linguist.png" height="300px" alt="Belugas"/>
@@ -27,7 +27,7 @@ The Belugas Ruby CLI is distributed and run as a [Docker](https://hub.docker.com
 Fire up your terminal and run: 
 
 ```console
-docker pull WhalesIL/belugas-linguist:latest
+docker pull whalesil/belugas-linguist:latest
 ```
 
 And that's it! 
@@ -46,7 +46,7 @@ The project must be a git project, since linguist gets lots of information from 
 docker run \
   --interactive --tty --rm \
   --volume "$PWD":/code \
-  WhalesIL/belugas-linguist
+  whalesil/belugas-linguist
 ```
 
 And voilá! The terminal will stream a json output for each of the features detected in the following format:
