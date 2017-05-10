@@ -39,3 +39,6 @@
 .DS_Store
 
 *.gem
+
+# Include coverage report from Simplecov
+/coverage

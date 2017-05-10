@@ -36,9 +36,12 @@ GEM
       tzinfo (~> 1.1)
     builder (3.2.2)
     charlock_holmes (0.7.3)
+    codeclimate-test-reporter (1.0.8)
+      simplecov (<= 0.13)
     coderay (1.1.1)
     concurrent-ruby (1.0.4)
     diff-lcs (1.2.5)
+    docile (1.1.5)
     erubis (2.7.0)
     escape_utils (1.1.1)
     github-linguist (5.0.0)
@@ -50,7 +53,6 @@ GEM
     json (1.8.3)
     jsonapi (0.1.1.beta2)
       json (~> 1.8)
-    libv8 (3.16.14.19-x86_64-linux)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     method_source (0.8.2)
@@ -74,7 +76,6 @@ GEM
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
     rake (10.5.0)
-    ref (2.0.0)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
@@ -89,11 +90,13 @@ GEM
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
     rugged (0.25.0b10)
+    simplecov (0.13.0)
+      docile (~> 1.1.0)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
     slop (3.6.0)
     table_print (1.5.6)
-    therubyracer (0.12.3)
-      libv8 (~> 3.16.14.15)
-      ref
     thor (0.19.4)
     thread_safe (0.3.5)
     tzinfo (1.2.2)
@@ -105,10 +108,11 @@ PLATFORMS
 DEPENDENCIES
   belugas!
   bundler (~> 1.13)
+  codeclimate-test-reporter (~> 1.0.0)
   pry
   rake (~> 10.0)
   rspec (~> 3.0)
-  therubyracer
+  simplecov
 
 BUNDLED WITH
    1.14.6
