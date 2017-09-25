@@ -6,13 +6,22 @@ require 'active_model_serializers'
 
 require 'belugas/utils'
 require 'belugas/report'
+require "rescuer"
+
 module Belugas
   class Sonar < Thor
     package_name "belugas"
 
     desc "report", "Generates report from repo analysis"
     def report(pathname = ".")
-      Belugas::Report.new(pathname).render
+      rescuer = Rescuer.new
+
+      begin
+        Belugas::Report.new(pathname).render
+      rescue Exception => e
+        rescuer.ping e
+        raise e
+      end
     end
   end
 end
