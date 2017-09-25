@@ -6,7 +6,7 @@ volumes:
 
 services:
   belugas_linguist:
-    image: icalialabs/belugas-linguist:development
+    image: gueils/belugas-linguist:development
     build:
       context: .
       dockerfile: dev.Dockerfile
