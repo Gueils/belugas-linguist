@@ -15,7 +15,7 @@ module Belugas
 
     def render
       @collection.languages.each do |language|
-        next unless SUPPORTED_LANGUAGES.includes?(language.downcase)
+        next unless SUPPORTED_LANGUAGES.include?(language.name.downcase)
 
         STDOUT.print Belugas::Serializers::Language.new(language, scope: @project).to_json
         STDOUT.print "\0"
